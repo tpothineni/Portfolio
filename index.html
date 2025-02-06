@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarun's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <!-- Tarun Kumar Pothineni -->
+         <img src="./assets/logo1.png" alt="logo" class="nav-img" />
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!-- <li><a href="#certifications">Certifications</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <!-- Tarun Kumar -->
+        <img src="./assets/logo1.png" alt="logo" class="nav-img" />
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <!-- <li><a href="#certifications">Certifications</a></li> -->
+          <!-- <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> -->
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile4.png" alt="Tarun Kumar Pothineni profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tarun Kumar Pothineni</h1>
+        <p class="section__text__p2">Full Stack Developer, Java Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="window.location.href=window.location.pathname + '#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            target="_blank"
+            onclick="location.href='https://www.linkedin.com/in/tarun-kumar-pothineni/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            target="_blank"
+            onclick="location.href='https://github.com/tpothineni?tab=repositories'"
+          />
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="window.location.href=window.location.pathname + '#about'"
+      />
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2.5+ years <br />Full Stack Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Master's in CS - State University of New York at Binghamton<br />Bachelor's in ECE - LNMIIT</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Experienced Full Stack Developer with 2.5 years of industry experience, currently pursuing my MS in Computer Science at State University of New York at Binghamton. 
+            </p>
+            <p>
+              Proficient in innovative solutions enhancing revenue growth and customer experience across multiple programming languages.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="arrows">
+        <img
+          src="./assets/uparrow.png"
+          alt="Arrow icon"
+          class="icon arrow top"
+          onclick="window.location.href=window.location.pathname + '#'"
+        />
+
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow bottom"
+          onclick="window.location.href=window.location.pathname + '#skills'"
+        />
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages, Testing, Databases and Methodologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/java.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/c.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/c++.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/css.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/r.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R Programming</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/my.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/postgres.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgresSQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/oracle.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Oracle</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/volt.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VoltDB</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sdlc.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SDLC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/agile.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Agile</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/water.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Waterfall</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cloud Technologies, Version Control Tools, CI/CD and DevOps Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/aws.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/ec2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>EC2</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/jenkins.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jenkins</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/docker.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/kub.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kubernetes</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/bit.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bitbucket</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/kafka.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kafka</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/gafana.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Grafana</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/kibana.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kibana</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/ter.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Terraform</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/pro.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Prometheus</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frameworks and Developer Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/springboot.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spring Boot</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/spring.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spring</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Hibernate.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hibernate</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/react.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/angular.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Maven.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Maven</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/rest.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RESTful API</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/ghrpc.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>gRPC</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/vs.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>V S Code</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/eclpise.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Eclipse</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/intel.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Intellij</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/post.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/db.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DBeaver</h3>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/office.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Office 365</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrows">
+        <img
+          src="./assets/uparrow.png"
+          alt="Arrow icon"
+          class="icon arrow top"
+          onclick="window.location.href=window.location.pathname + '#skills'"
+        />
+
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow bottom"
+          onclick="window.location.href=window.location.pathname + '#experience'"
+        />
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="list-container color-container">
+            <h2 class="experience-sub-title">Senior Engineer</h2>
+            <p>Comviva Technologies Limited. (Dec 2022 - Jul 2023)</p>
+            <ul class="projects-list">
+              <li>Effectively conducted a Proof of Concept to upgrade the database, achieving a noteworthy 66% cost reduction and a 15% increase in efficiency compared to VOLTDB. Simultaneously proficiently migrated 23 microservices to Singlestore.</li>
+              <li>Developed and implemented an inventive Purchase History-based Offer Holdout feature, which played a pivotal role in a 17% surge in client revenue by intelligently avoiding unnecessary offers to recent customers.</li>
+              <li>Integrated all microservices with Consul instead of relying on external configuration files, rendering the productcompatible for multiple deployments and enabling seamless inter-service communication among the microservices.</li>
+            </ul>
+          </div>
+          <div class="list-container color-container">
+            <h2 class="experience-sub-title">Engineer</h2>
+            <p>Comviva Technologies Limited. (Jul 2021 - Nov 2022)</p>
+            <ul class="projects-list">
+              <li>Revamped an existing microservice by implementing caching, streamlining database queries, and optimizing code, achieving an impressive 71.4% decrease in the time required to deliver customer offers.</li>
+              <li>Developed a microservice that delivers personalized customer offers based on handset interactions with a 100% success rate, and provided it to the client 9 days before the agreed-upon deadline.</li>
+              <li>Optimized the queries in the microservice interacting with PostgreSQL, resulting in a 600ms reduction in output response time.</li>
+              <li>Expertly debugged and resolved over 500 real-time bugs during client server deployment.</li>
+            </ul>
+          </div>
+          <div class="list-container color-container">
+            <h2 class="experience-sub-title">Engineer Intern</h2>
+            <p>Comviva Technologies Limited. (Jan 2021 - Jun 2021)</p>
+            <ul class="projects-list">
+              <li>Developed a microservices-based system with the objective of presenting all eligible offers to customers in the mobile application through REST-API. The system utilizes data from profiles and campaigns stored in PostgreSQL.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="arrows">
+        <img
+          src="./assets/uparrow.png"
+          alt="Arrow icon"
+          class="icon arrow top"
+          onclick="window.location.href=window.location.pathname + '#skills'"
+        />
+
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow bottom"
+          onclick="window.location.href=window.location.pathname + '#projects'"
+        />
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="list-container color-container">
+            <h2 class="experience-sub-title">HandWritten Digits Recognition</h2>
+            <p>Python ,CNN ,TensorFlow Lite ,Java ,Android Studio </p>
+            <ul class="projects-list">
+              <li>Developed an Android app using Java and TensorFlow Lite to predict handwritten digits with a custom CNN model, achieving 98.97% accuracy and a maximum latency of 2ms.</li>
+              <li>Evaluated inbuilt models such as ResNet50, LeNet, and MobileNetV3, achieving accuracies of 98.55%, 98.42%, and 96.64% respectively.</li>
+              <li>Implemented a robust machine learning solution with a 4-layer CNN, trained over 7 epochs using Adam optimizer and dropout regularization, outperforming traditional models.</li>
+            </ul>
+          </div>
+          <div class="list-container color-container">
+            <h2 class="experience-sub-title">Enhanced YOLO Framework</h2>
+            <p>Python ,PyTorch ,CUDA ,NumPy ,Pandas , Matplotlib ,Google Colab </p>
+            <ul class="projects-list">
+              <li>Improved YOLOv7 model's mean Average Precision (mAP) by 3.1% and reduced inference time by 5.4%, optimizing detection speed and accuracy on Pascal VOC 2012 dataset.</li>
+              <li>Increased the model's precision by 2.4% and recall by 1.8% through hyperparameter tuning and efficient data preprocessing techniques.</li>
+              <li>Achieved a 4.5% reduction in GPU memory usage and enhanced overall model efficiency, contributing to faster training cycles on Google Colab with T4 GPU.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="arrows">
+        <img
+          src="./assets/uparrow.png"
+          alt="Arrow icon"
+          class="icon arrow top"
+          onclick="window.location.href=window.location.pathname + '#experience'"
+        />
+
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow bottom"
+          onclick="window.location.href=window.location.pathname + '#contact'"
+        />
+      </div>
+    </section>
+    
+    <!-- <section id="certifications" class="certificate_section">
+      <p class="section__text__p1">My Certificates</p>
+      <h1 class="title">Certifications</h1>
+      <ul class="certifications-list">
+        <li>Microsoft Azure Fundamentals (AZ-900) Certified</li>
+        <li>Microsoft Azure Administrator (AZ-104) Certified</li>
+        <li>PCEP - Python Programmer Certified</li>
+        <li>Introduction to Generative AI (Google Certified)</li>
+        <li>PL300T00-A: Microsoft Power BI Data Analyst</li>
+      </ul>
+    </section> -->
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:tarunkumarpothineni@gmail.com">Mail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel: +1 (607) 296- 8981" target="_blank">+1 (607) 296- 8981</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/tarun-kumar-pothineni/" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/whatsapp.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://wa.me/+16072968981" target="_blank">Whatsapp</a></p>
+        </div>
+      </div>
+      <div class="arrows">
+        <img
+          src="./assets/uparrow.png"
+          alt="Arrow icon"
+          class="icon arrow top"
+          onclick="window.location.href=window.location.pathname + '#'"
+        />
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <!-- <li><a href="#certifications">Certifications</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Tarun Kumar Pothineni. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
