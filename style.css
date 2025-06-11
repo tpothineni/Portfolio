@@ -493,3 +493,20 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+/* typewriter cursor */
+#role-text {
+  border-right: .1em solid rgba(85,85,85,0.8);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* blink */
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50%      { border-color: rgba(85,85,85,0.8); }
+}
+#role-text {
+  animation: blink .7s step-end infinite;
+}

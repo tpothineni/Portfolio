@@ -11,8 +11,7 @@
   <body>
     <nav id="desktop-nav">
       <div class="logo">
-        <!-- Tarun Kumar Pothineni -->
-         <img src="./assets/logo1.png" alt="logo" class="nav-img" />
+        <img src="./assets/logo1.png" alt="logo" class="nav-img" />
       </div>
       <div>
         <ul class="nav-links">
@@ -20,14 +19,12 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <!-- <li><a href="#certifications">Certifications</a></li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
       <div class="logo">
-        <!-- Tarun Kumar -->
         <img src="./assets/logo1.png" alt="logo" class="nav-img" />
       </div>
       <div class="hamburger-menu">
@@ -41,8 +38,6 @@
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <!-- <li><a href="#certifications">Certifications</a></li> -->
-          <!-- <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> -->
         </div>
       </div>
     </nav>
@@ -53,7 +48,10 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Tarun Kumar Pothineni</h1>
-        <p class="section__text__p2">Full Stack Developer, Java Developer</p>
+        <!-- swapped out the static text for a span we can script -->
+        <p class="section__text__p2">
+          <span id="role-text"></span>
+        </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -66,20 +64,34 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
+          <!-- <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
+            onclick="window.open('https://www.linkedin.com/in/tarun-kumar-pothineni/','_blank')"
+          /> -->
+          <a
+            href="https://www.linkedin.com/in/tarun-kumar-pothineni/"
             target="_blank"
-            onclick="location.href='https://www.linkedin.com/in/tarun-kumar-pothineni/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a
+            href="https://github.com/tpothineni?tab=repositories"
             target="_blank"
-            onclick="location.href='https://github.com/tpothineni?tab=repositories'"
-          />
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
         </div>
       </div>
       <img
@@ -123,9 +135,9 @@
           </div>
           <div class="text-container">
             <p>
-              Full-stack developer with 2.5 years of experience in microservices architecture, database management, and Agile method-
-              ologies. Pursuing an MS in Computer Science at the State University of New York, Binghamton, with a proven ability to
-              optimize system performance, enhance AI models, and drive business impact.  
+              Full-stack developer with 2.5 years of experience and currently pursuing an MS in Computer Science at SUNY Binghamton.
+              Proficient in Java, Spring Boot, React, and cloud technologies like AWS and Azure. Experienced in building microservices,
+              real-time data pipelines with Kafka and Spark, and ML. Skilled in DevOps, CI/CD, and secure, test-driven development.
             </p>
           </div>
         </div>
@@ -613,32 +625,33 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="list-container color-container">
-            <h2 class="experience-sub-title">Senior Engineer</h2>
+            <h2 class="experience-sub-title">Senior Software Developer</h2>
             <p>Comviva Technologies Limited. (Dec 2022 - Jul 2023)</p>
             <ul class="projects-list">
-              <li>Spearheaded a Proof of Concept to upgrade the database, slashing costs by 66% and boosting efficiency by 15% compared to VOLTDB, while migrating 23 microservices seamlessly to Singlestore.</li>
-              <li>Designed and launched a Purchase History-based Offer Holdout feature, driving a 17% increase in client revenue by optimizing offer distribution to recent customers.</li>
-              <li>Developed a Lambda architecture for real-time offer delivery, accelerating traffic by 60% and amplifying revenue by 40%, while creating a KTable and KStreams accumulator to expedite transaction processing and offer allocation</li>
+              <li>Spearheaded the successful migration of 23 microservices from VoltDB to a relational database system (RDBMS), resulting in a 66% reduction in infrastructure costs and a 15% improvement in overall query performance.</li>
+              <li>Centralized services via Consul, reducing deployment effort by 35% and improving system reliability across environments.</li>
+              <li>Engineered a modular, fault-tolerant offer distribution system using Kafka for real-time processing with near-zero downtime.</li>
+              <li>Conducted in-depth performance profiling and JVM tuning, improving system throughput by 38% under peak loads.</li>
             </ul>
           </div>
           <div class="list-container color-container">
-            <h2 class="experience-sub-title">Engineer</h2>
+            <h2 class="experience-sub-title">Software Developer</h2>
             <p>Comviva Technologies Limited. (Jul 2021 - Nov 2022)</p>
             <ul class="projects-list">
-              <li>Revamped an existing microservice by integrating caching, streamlining database queries, and optimizing code, reducing customer offer delivery time by 71.4%.</li>
-              <li>Integrated all microservices with Consul, removing reliance on external configuration files and enhancing multi-deployment compatibility and seamless inter-service communication.</li>
-              <li>Deployed the EFK stack for centralized logging , improving log collection, aggregation, and analysis by 40%.</li>
-              <li>Configured and launched Grafana for real-time monitoring and visualization,increasing system observability by 30%.</li>
-              <li>Optimized PostgreSQL queries in a microservice, boosting efficiency and reducing output response time by 600ms.</li>
+              <li>Refactored legacy codebase into modular, cloud-native microservices using Spring Boot, Docker and Kubernetes, resulting in an 18% increase in deployment frequency and simplified CI/CD automation across environments.</li>
+              <li>Implemented a RESTful APIs to exclude high-propensity users from promotional offers, boosting client revenue by 17%.</li>
+              <li>DDeveloped real-time Grafana dashboards for end-to-end system health monitoring and integrated proactive alerting with Slack and Splunk, cutting incident resolution time by 45% and improving operational visibility across teams.</li>
+              <li>Deployed the EFK stack for log management, improving debugging efficiency and reducing log analysis time by 40%.</li>
+              <li>Optimized PostgreSQL queries, reducing response latency by 600ms and improving data fetch times by 20%.</li>
             </ul>
           </div>
           <div class="list-container color-container">
-            <h2 class="experience-sub-title">Engineer Intern</h2>
+            <h2 class="experience-sub-title">Software Developer Intern</h2>
             <p>Comviva Technologies Limited. (Jan 2021 - Jun 2021)</p>
             <ul class="projects-list">
-              <li>Engineered a microservices architecture that facilitated the delivered personalized offers to customers via REST API; improved response times by 40% while handling requests from 15,000+ active users daily.</li>
-              <li>Refined code quality and reduced production defects by achieving 80% code coverage through test-driven development.</li>
-              <li>Resolved over 300+ real-time bugs during client-server deployment, enhancing system stability and performance.</li>  
+              <li>Built a RESTful microservice to streamline offer distribution, reducing response time by 40% for over 15,000 daily users.</li>
+              <li>Boosted code reliability by achieving 80% unit test coverage through TDD, reducing production bugs by 25%.</li>
+              <li>Resolved over 300+ real-time bugs during deployment, significantly enhancing system stability and reducing release issues.</li>  
             </ul>
           </div>
         </div>
@@ -664,6 +677,16 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <div class="list-container color-container">
+            <h2 class="experience-sub-title">DriveSync</h2>
+            <p>Java ,Sprinboot ,Gradle ,React ,Restful APIs ,  OAuth2 ,Spring Security ,JUnit 5 , Mockito </p>
+            <ul class="projects-list">
+              <li>Built a full-stack Google Drive manager using React and Spring Boot with Google OAuth2 and JWT for secure access.</li>
+              <li>Developed RESTful APIs for CRUD operations on files with sub-300ms sync, ensuring a smooth user experience.</li>
+              <li>Implemented Spring Security with CSRF and OAuth2, automating auth and securing isolated Google Drive access per user.</li>
+              <li>Tested backend endpoints with JUnit 5, Mockito, and MockMvc, achieving 95% coverage.</li>
+            </ul>
+          </div>
           <div class="list-container color-container">
             <h2 class="experience-sub-title">HandWritten Digits Recognition</h2>
             <p>Python ,CNN ,TensorFlow Lite ,Java ,Android Studio </p>
@@ -748,7 +771,7 @@
           />
           <p><a href="https://wa.me/+16072968981" target="_blank">Whatsapp</a></p>
         </div> -->
-      </div>
+        </div>
       <div class="arrows">
         <img
           src="./assets/uparrow.png"
